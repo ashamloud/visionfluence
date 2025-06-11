@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+    
+            font-family: 'Arial', sans-serif;
+
+                background-image: url(fontg.png);
+    background-size: cover;
+    margin: 0;
+        }
+        .barnav {
+    width: 96%;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    border: 0px solid black;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 1px 1px 3px;
+    margin-left: 2%;
+    height: 60px;
+    top: 20px;
+    align-items: center;
+  }
+
+  .logo {
+    margin-top: 20px;
+  }
+
+  .cnt {
+    border: 1px solid;
+    height: 25px;
+    width: auto;
+    background-color: #664475;
+    border-radius: 40px;
+    align-content: center;
+
+  }
+
+
+  a {
+
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+  }
+
+  .cnt:hover {
+    color: #a89aad;
+    background-color: #16021e;
+    padding: 0.5px;
+
+
+  }
+        
+
+        .container {
+
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #6b2c91;
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-transform: lowercase;
+        }
+
+        .contact-wrapper {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+            border-radius: 20px;
+            padding: 40px;
+            color: white;
+            flex: 0 0 400px;
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .contact-info h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+            font-weight: normal;
+            text-transform: lowercase;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            flex-grow: 1;
+            justify-content: center;
+
+            text-align: center;
+        }
+
+        .phone-numbers {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+                        
+        }
+
+        .phone-numbers div {
+            font-size: 2.2rem;
+            font-weight: 300;
+        }
+
+        .email {
+                  font-size: 2.2rem;
+            font-weight: 300;
+        }
+
+        .address {
+            font-size: 2.2rem;
+            font-weight: 300;
+        }
+
+        .form-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            flex: 1;
+            min-width: 400px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section h2 {
+            color: #6b2c91;
+            font-size: 32px;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 8px;
+            font-weight: 400;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            background-color: #6b2c91;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            background-color: #7c3aed;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(107, 44, 145, 0.3);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #6b2c91, #7c3aed);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            float: right;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(107, 44, 145, 0.4);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            .contact-wrapper {
+                flex-direction: column;
+            }
+            
+            .contact-info,
+            .form-section {
+                flex: none;
+                min-width: auto;
+            }
+            
+            h1 {
+                font-size: 36px;
+            }
+            
+            .contact-info h2,
+            .form-section h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+
+  <div class="barnav">
+    <div class="logo">
+      <img src="logovisio.png" alt="" width="120">
+    </div>
+
+    <div>
+      <a href="accueil.html">Accueil</a>
+      <a href="Propos.html">À Propos</a>
+      <a href="atelier.html">Ateliers</a>
+      <a href="">évenement</a>
+      <a href="">Blog </a>
+      <a href="partenariat.html">Partenariats</a>
+
+    </div>
+
+    <div class="cnt">
+      <a href="contact.html" style="color: white;">Contact et Réseaux Sociaux</a>
+    </div>
+
+  </div>
+
+
+
+    <div class="container" style="margin-bottom: 50px;">
+        <h1 style="margin-top: 130px;">contact</h1>
+        
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h2>contact info</h2>
+                <div class="contact-details">
+                    <div class="phone-numbers">
+                        <div>33 888 8888</div>
+                        <div>77 666 55 44</div>
+                    </div>
+                    <div class="email">visionfluence@mail.com</div>
+                    <div class="address">Sacré Coeur 3</div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Formulaire</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="prenom">Prenom</label>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
